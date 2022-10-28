@@ -163,7 +163,7 @@ function Resume() {
       end: '0.00',
     },
     {
-      company: 'AIR Price',
+      company: '$AIR Price',
       title: 'AIR/WETH',
       logo: logoStarbucks,
       start: '0',
