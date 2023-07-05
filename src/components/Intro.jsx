@@ -48,9 +48,9 @@ export function Intro() {
           <Logo className="inline-block h-8 w-auto" />
         </Link>
       </div>
-      <h1 className="mt-14 font-display text-4xl/tight font-light text-white">
+      <h1 className="mt-12 font-display text-4xl/tight font-light text-white">
         Soaring to New{' '}
-        <span className="text-sky-300">Heights with the Blockchain</span>
+        <span className="text-sky-300">Heights on the Blockchain</span>
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
         airport.eth leverages the power of Ethereum&#39;s blockchain technology
@@ -60,16 +60,30 @@ export function Intro() {
       </p>
       <SignUpForm />
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
-        {/* <IconLink href="#" icon={BookIcon} className="flex-none">
+        <IconLink href="#" icon={BookIcon} className="flex-none">
           Documentation
-        </IconLink> */}
+        </IconLink>
         <IconLink href="#" icon={GitHubIcon} className="flex-none">
           GitHub
         </IconLink>
-        {/* <IconLink href="/rss/feed.xml" icon={FeedIcon} className="flex-none">
+        <IconLink href="/rss/feed.xml" icon={FeedIcon} className="flex-none">
           RSS
-        </IconLink> */}
+        </IconLink>
       </div>
+      <dl className="mt-8 flex flex-wrap justify-center gap-x-10 gap-y-3 uppercase sm:gap-x-2 lg:justify-start lg:gap-x-20">
+        {[
+          ['Token', '$AIRPORT'],
+          ['Price', '$0.30'],
+          ['Pool', 'Uniswap'],
+        ].map(([name, value]) => (
+          <div key={name}>
+            <dt className="font-mono text-sm text-blue-600">{name}</dt>
+            <dd className="mt-0.5 text-sm font-semibold tracking-tight text-blue-300">
+              {value}
+            </dd>
+          </div>
+        ))}
+      </dl>
     </>
   )
 }
