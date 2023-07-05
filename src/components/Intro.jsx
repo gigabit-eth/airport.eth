@@ -77,9 +77,9 @@ export function Intro() {
 export function IntroFooter() {
   return (
     <p className="flex items-baseline gap-x-2 text-[0.8125rem]/6 text-gray-500">
-      Underwritten by{' '}
+      Managed by{' '}
       <IconLink href="#" icon={TwitterIcon} compact large>
-        aviationcapital.eth
+        blockequity.eth
       </IconLink>
     </p>
   )
