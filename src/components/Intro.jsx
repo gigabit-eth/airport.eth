@@ -58,10 +58,10 @@ export function Intro() {
         operations, reduces errors, and promotes transparency, ushering in a new
         era of efficiency and cost-effectiveness for global aviation.
       </p>
-      <SignUpForm />
+      {/* <SignUpForm />
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
         <IconLink href="#" icon={BookIcon} className="flex-none">
-          Documentation
+          Docs
         </IconLink>
         <IconLink href="#" icon={GitHubIcon} className="flex-none">
           GitHub
@@ -83,7 +83,7 @@ export function Intro() {
             </dd>
           </div>
         ))}
-      </dl>
+      </dl> */}
     </>
   )
 }
@@ -91,9 +91,14 @@ export function Intro() {
 export function IntroFooter() {
   return (
     <p className="flex items-baseline gap-x-2 text-[0.8125rem]/6 text-gray-500">
-      Managed by{' '}
-      <IconLink href="#" icon={TwitterIcon} compact large>
-        blockequity.eth
+      Owned by{' '}
+      <IconLink
+        href="https://twitter.com/gigabit_eth"
+        icon={TwitterIcon}
+        compact
+        large
+      >
+        wya.eth
       </IconLink>
     </p>
   )
