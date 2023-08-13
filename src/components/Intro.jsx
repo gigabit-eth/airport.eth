@@ -95,6 +95,7 @@ export function IntroFooter() {
       <IconLink
         href="https://twitter.com/gigabit_eth"
         icon={TwitterIcon}
+        target="_blank"
         compact
         large
       >
