@@ -40,6 +40,45 @@ function TwitterIcon(props) {
   )
 }
 
+function BlockEquityIcon(props) {
+  return (
+    <svg
+      width={90}
+      height={90}
+      viewBox="0 0 90 90"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <g fill="none">
+        <path
+          d="M85.859 65.156H69.297a4.14 4.14 0 0 0-4.141 4.141v16.562A4.14 4.14 0 0 0 69.297 90h16.562A4.14 4.14 0 0 0 90 85.859V69.297a4.14 4.14 0 0 0-4.141-4.141"
+          fill="#1B7B3D"
+        />
+        <path
+          d="M4.141 90h16.562a4.14 4.14 0 0 0 4.141-4.141V69.297a4.14 4.14 0 0 0-4.141-4.141H4.141A4.14 4.14 0 0 0 0 69.297v16.562A4.14 4.14 0 0 0 4.141 90"
+          fill="#2DC48D"
+        />
+        <path
+          d="M55.859 60A4.14 4.14 0 0 0 60 55.859V39.297a4.14 4.14 0 0 0-4.141-4.141H39.297a4.14 4.14 0 0 0-4.141 4.141v16.562A4.14 4.14 0 0 0 39.297 60z"
+          fill="#B8FFC6"
+        />
+        <path
+          d="M4.141 60h16.562a4.14 4.14 0 0 0 4.141-4.141V39.297a4.14 4.14 0 0 0-4.141-4.141H4.141A4.14 4.14 0 0 0 0 39.297v16.562A4.14 4.14 0 0 0 4.141 60"
+          fill="#0D3B66"
+        />
+        <path
+          d="M85.859 0H69.297a4.14 4.14 0 0 0-4.141 4.141v16.562a4.14 4.14 0 0 0 4.141 4.141h16.562A4.14 4.14 0 0 0 90 20.703V4.141A4.14 4.14 0 0 0 85.859 0"
+          fill="#1A67A5"
+        />
+        <path
+          d="M60 4.141v16.562a4.14 4.14 0 0 1-4.141 4.141H39.297a4.14 4.14 0 0 1-4.141-4.141V4.141A4.14 4.14 0 0 1 39.297 0h16.562A4.14 4.14 0 0 1 60 4.141"
+          fill="#73D6EE"
+        />
+      </g>
+    </svg>
+  )
+}
+
 function VisionIcon(props) {
   return (
     <svg
@@ -473,10 +512,10 @@ export function Intro() {
         <span className="text-sky-300">Heights on the Blockchain</span>
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
-        airport.eth leverages the power of Ethereum&#39;s blockchain technology
-        to redefine the aviation industry. Our smart contract system simplifies
-        operations, reduces errors, and promotes transparency, ushering in a new
-        era of efficiency and cost-effectiveness for global aviation.
+        airport.eth leverages the power of blockchain technology to redefine the
+        aviation industry. Our smart contract system aims to simplify
+        operations, reduces errors, and promotes transparency, while ushering in
+        a new era of efficiency and cost-effectiveness for the global aviation.
       </p>
       {/* <SignUpForm />
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
@@ -511,7 +550,18 @@ export function Intro() {
 export function IntroFooter() {
   return (
     <p className="flex items-baseline gap-x-2 text-[0.8125rem]/6 text-gray-500">
-      managed on{' '}
+      Managed by{' '}
+      <IconLink
+        href="https://twitter.com/blockequityeth"
+        icon={BlockEquityIcon}
+        target="_blank"
+        compact
+        large
+      >
+        Blockequity
+      </IconLink>{' '}
+      {/* </IconLink>{' '}
+      🤝{' '}
       <IconLink
         href="https://vision.io/name/airport"
         icon={VisionIcon}
@@ -520,7 +570,7 @@ export function IntroFooter() {
         large
       >
         Vision
-      </IconLink>
+      </IconLink> */}
     </p>
   )
 }
